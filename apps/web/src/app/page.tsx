@@ -1,5 +1,8 @@
 import { Metadata } from "next";
 import { Button, Card } from "ui";
+import Link from "next/link";
+
+
 
 const CARD_CONTENT = [
   {
@@ -33,6 +36,11 @@ export default function Home() {
             Turborepo Example
           </span>
         </h1>
+        <div>
+          <Link className="text-white"
+          href="http://localhost:3001">Visit App-B
+          </Link>
+        </div>
         <div className="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8">
           <Button />
         </div>
